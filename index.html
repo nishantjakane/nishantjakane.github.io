@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Nishant Jakane — student developer interested in finance, software, and machine learning." />
+    <title>Nishant Jakane — Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@400;500;600&family=Unbounded:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <svg class="glass-filter" aria-hidden="true" focusable="false">
+      <defs>
+        <filter id="nav-glass-filter" color-interpolation-filters="sRGB">
+          <feTurbulence type="fractalNoise" baseFrequency=".014 .04" numOctaves="2" seed="7" result="noise" />
+          <feDisplacementMap in="SourceGraphic" in2="noise" scale="7" xChannelSelector="R" yChannelSelector="G" result="red-shift" />
+          <feColorMatrix in="red-shift" values="1 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 1 0" result="red" />
+          <feDisplacementMap in="SourceGraphic" in2="noise" scale="5" xChannelSelector="R" yChannelSelector="G" result="green-shift" />
+          <feColorMatrix in="green-shift" values="0 0 0 0 0  0 1 0 0 0  0 0 0 0 0  0 0 0 1 0" result="green" />
+          <feDisplacementMap in="SourceGraphic" in2="noise" scale="3" xChannelSelector="R" yChannelSelector="G" result="blue-shift" />
+          <feColorMatrix in="blue-shift" values="0 0 0 0 0  0 0 0 0 0  0 0 1 0 0  0 0 0 1 0" result="blue" />
+          <feBlend in="red" in2="green" mode="screen" result="yellow" />
+          <feBlend in="yellow" in2="blue" mode="screen" />
+        </filter>
+      </defs>
+    </svg>
+    <div class="noise" aria-hidden="true"></div>
+    <header class="nav container">
+      <a class="wordmark" href="#top" aria-label="Nishant Jakane, home">NJ<span>.</span></a>
+      <nav aria-label="Main navigation">
+        <a href="#work">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <a class="nav-github" href="https://github.com/nishantjakane" target="_blank" rel="noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero container">
+        <div class="eyebrow"><span class="status-dot"></span> Student developer · Bengaluru, India</div>
+        <h1>Nishant<br /><em>Jakane.</em></h1>
+        <p class="hero-focus">Building projects in finance &amp; technology.</p>
+        <p class="hero-copy">I’m Nishant Jakane, a student at PES University, Bangalore. I enjoy learning by building software projects around finance, systems, and machine learning.</p>
+        <div class="hero-actions">
+          <div class="fx-layer">
+            <a class="liquid-button" href="#work" style="--w: 190px; --h: 52px; --tr: 18%;">
+              <span class="text">View projects</span>
+              <span class="btn-icon" aria-hidden="true">
+                <svg class="svg" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg"><path d="M779.180132 473.232045 322.354755 16.406668c-21.413706-21.413706-56.121182-21.413706-77.534887 0-21.413706 21.413706-21.413706 56.122205 0 77.534887l418.057421 418.057421L244.819868 930.057421c-21.413706 21.413706-21.413706 56.122205 0 77.534887 10.706853 10.706853 24.759917 16.059767 38.767955 16.059767s28.061103-5.353938 38.767955-16.059767L779.180132 550.767955C800.593837 529.35425 800.593837 494.64575 779.180132 473.232045z" /></svg>
+              </span>
+              <span class="circle-overlay" aria-hidden="true"></span>
+            </a>
+          </div>
+          <a class="button quiet" href="mailto:nishantjakane425@gmail.com">Get in touch <span>↗</span></a>
+        </div>
+      </section>
+
+      <section class="work container" id="work">
+        <div class="section-heading"><p class="kicker">01 / Projects</p><h2>Things I’ve been<br />building and learning.</h2></div>
+        <div class="projects">
+          <article class="project featured">
+            <div class="project-index">01</div>
+            <div class="project-body">
+              <p class="project-type">C++ · FINANCE</p>
+              <h3>Orderbook Engine</h3>
+              <p>A project exploring how an order book works, including the basic logic used to match buy and sell orders.</p>
+              <div class="tech-stack" aria-label="Technologies: C++">
+                <span class="tech"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg" alt="" /> C++</span>
+              </div>
+            </div>
+            <a class="project-link" href="https://github.com/nishantjakane/orderbook-engine" target="_blank" rel="noreferrer" aria-label="Open Orderbook Engine on GitHub">↗</a>
+          </article>
+          <article class="project">
+            <div class="project-index">02</div>
+            <div class="project-body">
+              <p class="project-type">PYTHON · FINANCE</p>
+              <h3>BacktestKit</h3>
+              <p>A Python project for exploring and testing simple trading ideas using historical market data.</p>
+              <div class="tech-stack" aria-label="Technologies: Python">
+                <span class="tech"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" alt="" /> Python</span>
+              </div>
+            </div>
+            <a class="project-link" href="https://github.com/nishantjakane/backtestkit" target="_blank" rel="noreferrer" aria-label="Open BacktestKit on GitHub">↗</a>
+          </article>
+          <article class="project">
+            <div class="project-index">03</div>
+            <div class="project-body">
+              <p class="project-type">PYTHON · MACHINE LEARNING</p>
+              <h3>CNN Chess Engine</h3>
+              <p>A machine-learning project exploring how a convolutional neural network can evaluate chess positions.</p>
+              <div class="tech-stack" aria-label="Technologies: Python and TensorFlow">
+                <span class="tech"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" alt="" /> Python</span>
+                <span class="tech"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tensorflow/tensorflow-original.svg" alt="" /> TensorFlow</span>
+              </div>
+            </div>
+            <a class="project-link" href="https://github.com/nishantjakane/cnn-chess-engine" target="_blank" rel="noreferrer" aria-label="Open CNN Chess Engine on GitHub">↗</a>
+          </article>
+          <article class="project">
+            <div class="project-index">04</div>
+            <div class="project-body">
+              <p class="project-type">DATA · EDUCATION</p>
+              <h3>KCET Answer Key</h3>
+              <p>Processed 900,000+ KCET OMR sheets published online and calculated marks for nearly 300,000 students, with a reported 2–3% error rate. I then used the data to build a rank predictor whose results compared well with other publicly available predictors.</p>
+              <div class="tech-stack" aria-label="Technologies: Python and data analysis">
+                <span class="tech"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" alt="" /> Python</span>
+                <span class="tech">Data analysis</span>
+              </div>
+            </div>
+            <a class="project-link" href="https://github.com/nishantjakane/kcetanswerkey" target="_blank" rel="noreferrer" aria-label="Open KCET Answer Key on GitHub">↗</a>
+          </article>
+        </div>
+        <a class="github-all" href="https://github.com/nishantjakane" target="_blank" rel="noreferrer"><span class="github-all__label">Explore all repositories on GitHub</span><span class="github-all__mark" aria-hidden="true">↗</span></a>
+      </section>
+
+      <section class="skills container" id="skills">
+        <p class="kicker">02 / Skills</p>
+        <div class="skills-layout">
+          <h2>Tools I’m<br />working with.</h2>
+          <div class="skill-groups">
+            <div class="skill-group"><p>Languages</p><span class="skill-tech"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" alt="" />Python</span><span class="skill-tech"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg" alt="" />C++</span></div>
+            <div class="skill-group"><p>Areas of interest</p><span>Financial technology</span><span>Machine learning</span><span>Software systems</span></div>
+            <div class="skill-group"><p>Currently exploring</p><span>Backtesting</span><span>Order books</span><span>Neural networks</span><span>Competitive programming</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="about container" id="about">
+        <p class="kicker">03 / About me</p>
+        <p class="statement"><span>I’m a </span><span class="highlight">student</span><span> from </span><span class="highlight">PES University, Bangalore</span><span>, with an interest in </span><span class="highlight">finance</span><span>, </span><span class="highlight">software development</span><span>, and </span><span class="highlight">ML</span><span>. I enjoy breaking down new ideas, building small projects around them, and improving as I go.</span></p>
+      </section>
+
+      <section class="contact container" id="contact">
+        <p class="kicker">04 / Contact</p>
+        <h2>Let’s get<br /><em>in touch.</em></h2>
+        <a class="email" href="mailto:nishantjakane425@gmail.com">nishantjakane425@gmail.com <span>↗</span></a>
+      </section>
+    </main>
+
+    <footer class="container"><span>© <span id="year"></span> Nishant Jakane</span><a href="#top">Back to top ↑</a></footer>
+    <script src="script.js"></script>
+  </body>
+</html>

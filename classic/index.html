@@ -15,14 +15,12 @@
     <link rel="stylesheet" href="glass-controls.css?v=5" />
     <link rel="stylesheet" href="glass-surfaces.css?v=1" />
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Pixelify+Sans:wght@400;500;600;700&family=VT323&display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="retro-glass.css?v=1" />
     <link rel="stylesheet" href="dark-mode.css?v=2" />
     <link rel="stylesheet" href="ambient-background.css?v=2" />
     <link rel="stylesheet" href="skills-glass.css?v=1" />
     <link rel="stylesheet" href="portfolio-effects.css?v=5" />
-    <link rel="stylesheet" href="version-switch.css?v=1" />
-    <link rel="stylesheet" href="ascii-revamp.css?v=5" />
+    <link rel="stylesheet" href="../version-switch.css?v=1" />
   </head>
   <body>
     <svg class="glass-filter" aria-hidden="true" focusable="false">
@@ -61,25 +59,12 @@
       <section class="hero container">
         <nav class="theme-switch version-switch" aria-label="Website version">
           <span class="theme-switch__label">[ version ]</span>
-          <a href="index.html" aria-current="page">Current</a>
-          <a href="classic/index.html">Classic</a>
+          <a href="../index.html">Current</a>
+          <a href="index.html" aria-current="page">Classic</a>
         </nav>
-        <div class="eyebrow"><span class="status-dot"></span> nishant@portfolio:~ <span class="hero-location">Bengaluru, IN</span></div>
-        <div class="hero-layout">
-        <div class="hero-intro">
-        <h1 class="ascii-name"><span class="sr-only">Nishant Jakane.</span><span class="ascii-name__art" aria-hidden="true"><span class="ascii-name__word" style="--type-delay:0s;--type-steps:7"><span class="ascii-name__ink">███╗   ██╗██╗███████╗██╗  ██╗ █████╗ ███╗   ██╗████████╗
-████╗  ██║██║██╔════╝██║  ██║██╔══██╗████╗  ██║╚══██╔══╝
-██╔██╗ ██║██║███████╗███████║███████║██╔██╗ ██║   ██║
-██║╚██╗██║██║╚════██║██╔══██║██╔══██║██║╚██╗██║   ██║
-██║ ╚████║██║███████║██║  ██║██║  ██║██║ ╚████║   ██║
-╚═╝  ╚═══╝╚═╝╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═══╝   ╚═╝</span></span>
-<span class="ascii-name__word" style="--type-delay:1.05s;--type-steps:6"><span class="ascii-name__ink">     ██╗ █████╗ ██╗  ██╗ █████╗ ███╗   ██╗███████╗
-     ██║██╔══██╗██║ ██╔╝██╔══██╗████╗  ██║██╔════╝
-     ██║███████║█████╔╝ ███████║██╔██╗ ██║█████╗
-██   ██║██╔══██║██╔═██╗ ██╔══██║██║╚██╗██║██╔══╝
-╚█████╔╝██║  ██║██║  ██╗██║  ██║██║ ╚████║███████╗
- ╚════╝ ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═══╝╚══════╝</span></span></span></h1>
-        <p class="hero-focus"><span aria-hidden="true">&gt; </span>Building projects in finance &amp; technology.<span class="ascii-caret" aria-hidden="true">_</span></p>
+        <div class="eyebrow"><span class="status-dot"></span> Student developer · Bengaluru, India</div>
+        <h1>Nishant<br /><em>Jakane.</em></h1>
+        <p class="hero-focus">Building projects in finance &amp; technology.</p>
         <p class="hero-copy">I’m Nishant Jakane, a student at PES University, Bangalore. I enjoy learning by building software projects around finance, systems, and machine learning.</p>
         <div class="hero-actions">
           <div class="fx-layer">
@@ -93,27 +78,16 @@
           </div>
           <a class="button quiet" href="#contact">Get in touch <span>↘</span></a>
         </div>
-        </div>
-        <aside class="identity-terminal" aria-label="A quick introduction">
-          <div class="identity-terminal__bar"><span aria-hidden="true">+ -- --</span> ~/nishant</div>
-          <p class="ascii-command"><span>~ $</span> whoami</p>
-          <p>Student developer<br /><span class="identity-muted">PES University, Bangalore</span></p>
-          <p class="ascii-command"><span>~ $</span> ls interests/</p>
-          <ul class="ascii-tree"><li>finance/</li><li>software-systems/</li><li>machine-learning/</li></ul>
-          <div class="identity-terminal__footer"><span aria-hidden="true">[ + ]</span> Learning by building.</div>
-        </aside>
-        </div>
-        <div class="ascii-section-rule" aria-hidden="true"><span>+---</span><span>SCROLL TO EXPLORE</span><span>---+</span></div>
       </section>
 
       <section class="work container" id="work">
-        <div class="section-heading"><p class="kicker">[ 01 ] ~/projects</p><h2>Built. Tested.<br />Learned.</h2><p class="section-note">$ ls projects/<br /><span>4 experiments, a lot of learning.</span></p></div>
+        <div class="section-heading"><p class="kicker">01 / Projects</p><h2>Things I’ve been<br />building and learning.</h2></div>
         <div class="projects">
           <article class="project featured">
             <div class="project-index">01</div>
             <div class="project-body">
               <p class="project-type">C++ · FINANCE</p>
-              <h3 class="project-heading"><span class="project-heading__file" aria-hidden="true">./matching-engine.cpp</span><span class="project-heading__name"><span class="project-heading__bracket" aria-hidden="true">[</span> Orderbook Engine <span class="project-heading__bracket" aria-hidden="true">]</span></span></h3>
+              <h3>Orderbook Engine</h3>
               <details class="project-preview">
                 <summary>Project snapshot <span aria-hidden="true">↗</span></summary>
                 <div class="project-terminal">
@@ -157,13 +131,13 @@
                 <span class="tech"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg" alt="" /> C++</span>
               </div>
             </div>
-            <a class="project-link" href="https://github.com/nishantjakane/orderbook-engine" target="_blank" rel="noreferrer" aria-label="View Orderbook Engine source on GitHub (opens in a new tab)"><span class="project-link__label">GitHub</span><span class="glass-arrow" aria-hidden="true">↗</span></a>
+            <a class="project-link" href="https://github.com/nishantjakane/orderbook-engine" target="_blank" rel="noreferrer" aria-label="Open Orderbook Engine on GitHub">↗</a>
           </article>
           <article class="project">
             <div class="project-index">02</div>
             <div class="project-body">
               <p class="project-type">PYTHON · FINANCE</p>
-              <h3 class="project-heading"><span class="project-heading__file" aria-hidden="true">./backtestkit.py</span><span class="project-heading__name"><span class="project-heading__bracket" aria-hidden="true">[</span> BacktestKit <span class="project-heading__bracket" aria-hidden="true">]</span></span></h3>
+              <h3>BacktestKit</h3>
               <details class="project-preview">
                 <summary>Project snapshot <span aria-hidden="true">↗</span></summary>
                 <div class="project-terminal">
@@ -200,13 +174,13 @@
                 <span class="tech"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" alt="" /> Python</span>
               </div>
             </div>
-            <a class="project-link" href="https://github.com/nishantjakane/backtestkit" target="_blank" rel="noreferrer" aria-label="View BacktestKit source on GitHub (opens in a new tab)"><span class="project-link__label">GitHub</span><span class="glass-arrow" aria-hidden="true">↗</span></a>
+            <a class="project-link" href="https://github.com/nishantjakane/backtestkit" target="_blank" rel="noreferrer" aria-label="Open BacktestKit on GitHub">↗</a>
           </article>
           <article class="project">
             <div class="project-index">03</div>
             <div class="project-body">
               <p class="project-type">PYTHON · MACHINE LEARNING</p>
-              <h3 class="project-heading"><span class="project-heading__file" aria-hidden="true">./chess-model.py</span><span class="project-heading__name"><span class="project-heading__bracket" aria-hidden="true">[</span> CNN Chess Engine <span class="project-heading__bracket" aria-hidden="true">]</span></span></h3>
+              <h3>CNN Chess Engine</h3>
               <details class="project-preview">
                 <summary>Project snapshot <span aria-hidden="true">↗</span></summary>
                 <div class="project-terminal">
@@ -251,13 +225,13 @@
                 <span class="tech"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tensorflow/tensorflow-original.svg" alt="" /> TensorFlow</span>
               </div>
             </div>
-            <a class="project-link" href="https://github.com/nishantjakane/cnn-chess-engine" target="_blank" rel="noreferrer" aria-label="View CNN Chess Engine source on GitHub (opens in a new tab)"><span class="project-link__label">GitHub</span><span class="glass-arrow" aria-hidden="true">↗</span></a>
+            <a class="project-link" href="https://github.com/nishantjakane/cnn-chess-engine" target="_blank" rel="noreferrer" aria-label="Open CNN Chess Engine on GitHub">↗</a>
           </article>
           <article class="project">
             <div class="project-index">04</div>
             <div class="project-body">
               <p class="project-type">DATA · EDUCATION</p>
-              <h3 class="project-heading"><span class="project-heading__file" aria-hidden="true">./omr-pipeline.py</span><span class="project-heading__name"><span class="project-heading__bracket" aria-hidden="true">[</span> KCET Answer Key <span class="project-heading__bracket" aria-hidden="true">]</span></span></h3>
+              <h3>KCET Answer Key</h3>
               <details class="project-preview">
                 <summary>Project snapshot <span aria-hidden="true">↗</span></summary>
                 <div class="project-terminal">
@@ -302,18 +276,18 @@
                 <span class="tech">Data analysis</span>
               </div>
             </div>
-            <a class="project-link" href="https://github.com/nishantjakane/kcetanswerkey" target="_blank" rel="noreferrer" aria-label="View KCET Answer Key source on GitHub (opens in a new tab)"><span class="project-link__label">GitHub</span><span class="glass-arrow" aria-hidden="true">↗</span></a>
+            <a class="project-link" href="https://github.com/nishantjakane/kcetanswerkey" target="_blank" rel="noreferrer" aria-label="Open KCET Answer Key on GitHub">↗</a>
           </article>
         </div>
         <a class="github-all" href="https://github.com/nishantjakane" target="_blank" rel="noreferrer"><span class="github-all__label">Explore all repositories on GitHub</span><span class="github-all__mark" aria-hidden="true">↗</span></a>
       </section>
 
       <section class="skills container" id="skills">
-        <p class="kicker">[ 02 ] ~/toolbox</p>
+        <p class="kicker">02 / Skills</p>
         <div class="skills-layout">
-          <h2>My working<br />toolbox<span class="heading-punctuation">_</span></h2>
+          <h2>Tools I’m<br />working with.</h2>
           <div class="skill-groups">
-            <div class="skill-group"><p>Languages</p><span class="skill-tech"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" alt="" />Python</span><span class="skill-tech"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg" alt="" />C++</span><span class="skill-tech"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" alt="" />HTML</span><span class="skill-tech"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" alt="" />CSS</span></div>
+            <div class="skill-group"><p>Languages</p><span class="skill-tech"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" alt="" />Python</span><span class="skill-tech"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg" alt="" />C++</span></div>
             <div class="skill-group"><p>Areas of interest</p><span>Financial technology</span><span>Machine learning</span><span>Software systems</span></div>
             <div class="skill-group"><p>Currently exploring</p><span>Backtesting</span><span>Order books</span><span>Neural networks</span><span>Competitive programming</span></div>
           </div>
@@ -321,15 +295,13 @@
       </section>
 
       <section class="about container" id="about">
-        <p class="kicker">[ 03 ] ~/about.md</p>
-        <p class="ascii-command"><span>~ $</span> cat about.md</p>
+        <p class="kicker">03 / About me</p>
         <p class="statement"><span>I’m a </span><span class="highlight">student</span><span> from </span><span class="highlight">PES University, Bangalore</span><span>, with an interest in </span><span class="highlight">finance</span><span>, </span><span class="highlight">software development</span><span>, and </span><span class="highlight">ML</span><span>. I enjoy breaking down new ideas, building small projects around them, and improving as I go.</span></p>
       </section>
 
       <section class="contact container" id="contact">
-        <p class="kicker">[ 04 ] ~/contact</p>
-        <p class="ascii-command"><span>~ $</span> start a conversation</p>
-        <h2>Let’s build<br />something<span class="heading-punctuation">_</span></h2>
+        <p class="kicker">04 / Contact</p>
+        <h2>Let’s get<br /><em>in touch.</em></h2>
         <a class="email" href="mailto:nishantjakane425@gmail.com">nishantjakane425@gmail.com <span>↗</span></a>
       </section>
     </main>
@@ -340,6 +312,5 @@
     <script src="ambient-background.js?v=2"></script>
     <script src="skills-glass.js?v=1"></script>
     <script src="portfolio-effects.js?v=3"></script>
-    <script src="ascii-ui.js?v=2"></script>
   </body>
 </html>

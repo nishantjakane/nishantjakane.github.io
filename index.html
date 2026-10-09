@@ -28,6 +28,7 @@
     <link rel="stylesheet" href="ambient-background.css?v=2" />
     <link rel="stylesheet" href="skills-glass.css?v=1" />
     <link rel="stylesheet" href="portfolio-effects.css?v=5" />
+    <link rel="stylesheet" href="ascii-revamp.css?v=1" />
   </head>
   <body>
     <svg class="glass-filter" aria-hidden="true" focusable="false">
@@ -65,13 +66,27 @@
     <main id="top">
       <section class="hero container">
         <div class="theme-switch" role="group" aria-label="Compare website designs">
-          <span class="theme-switch__label">Display</span>
+          <span class="theme-switch__label">[ appearance ]</span>
           <a href="?theme=night-pixel" data-theme-choice="night-pixel">Night</a>
           <a href="?theme=mono" data-theme-choice="mono">Mono</a>
         </div>
-        <div class="eyebrow"><span class="status-dot"></span> Student developer · Bengaluru, India</div>
-        <h1>Nishant<br /><em>Jakane.</em></h1>
-        <p class="hero-focus">Building projects in finance &amp; technology.</p>
+        <div class="eyebrow"><span class="status-dot"></span> nishant@portfolio:~ <span class="hero-location">Bengaluru, IN</span></div>
+        <div class="hero-layout">
+        <div class="hero-intro">
+        <h1 class="ascii-name"><span class="sr-only">Nishant Jakane.</span><span class="ascii-name__art" aria-hidden="true">███╗   ██╗██╗███████╗██╗  ██╗ █████╗ ███╗   ██╗████████╗
+████╗  ██║██║██╔════╝██║  ██║██╔══██╗████╗  ██║╚══██╔══╝
+██╔██╗ ██║██║███████╗███████║███████║██╔██╗ ██║   ██║
+██║╚██╗██║██║╚════██║██╔══██║██╔══██║██║╚██╗██║   ██║
+██║ ╚████║██║███████║██║  ██║██║  ██║██║ ╚████║   ██║
+╚═╝  ╚═══╝╚═╝╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═══╝   ╚═╝
+
+     ██╗ █████╗ ██╗  ██╗ █████╗ ███╗   ██╗███████╗
+     ██║██╔══██╗██║ ██╔╝██╔══██╗████╗  ██║██╔════╝
+     ██║███████║█████╔╝ ███████║██╔██╗ ██║█████╗
+██   ██║██╔══██║██╔═██╗ ██╔══██║██║╚██╗██║██╔══╝
+╚█████╔╝██║  ██║██║  ██╗██║  ██║██║ ╚████║███████╗
+ ╚════╝ ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═══╝╚══════╝</span></h1>
+        <p class="hero-focus"><span aria-hidden="true">&gt; </span>Building projects in finance &amp; technology.<span class="ascii-caret" aria-hidden="true">_</span></p>
         <p class="hero-copy">I’m Nishant Jakane, a student at PES University, Bangalore. I enjoy learning by building software projects around finance, systems, and machine learning.</p>
         <div class="hero-actions">
           <div class="fx-layer">
@@ -85,10 +100,21 @@
           </div>
           <a class="button quiet" href="#contact">Get in touch <span>↘</span></a>
         </div>
+        </div>
+        <aside class="identity-terminal" aria-label="A quick introduction">
+          <div class="identity-terminal__bar"><span aria-hidden="true">+ -- --</span> ~/nishant</div>
+          <p class="ascii-command"><span>~ $</span> whoami</p>
+          <p>Student developer<br /><span class="identity-muted">PES University, Bangalore</span></p>
+          <p class="ascii-command"><span>~ $</span> ls interests/</p>
+          <ul class="ascii-tree"><li>finance/</li><li>software-systems/</li><li>machine-learning/</li></ul>
+          <div class="identity-terminal__footer"><span aria-hidden="true">[ + ]</span> Learning by building.</div>
+        </aside>
+        </div>
+        <div class="ascii-section-rule" aria-hidden="true"><span>+---</span><span>SCROLL TO EXPLORE</span><span>---+</span></div>
       </section>
 
       <section class="work container" id="work">
-        <div class="section-heading"><p class="kicker">01 / Projects</p><h2>Things I’ve been<br />building and learning.</h2></div>
+        <div class="section-heading"><p class="kicker">[ 01 ] ~/projects</p><h2>Built. Tested.<br />Learned.</h2><p class="section-note">$ ls projects/<br /><span>4 experiments, a lot of learning.</span></p></div>
         <div class="projects">
           <article class="project featured">
             <div class="project-index">01</div>
@@ -290,9 +316,9 @@
       </section>
 
       <section class="skills container" id="skills">
-        <p class="kicker">02 / Skills</p>
+        <p class="kicker">[ 02 ] ~/toolbox</p>
         <div class="skills-layout">
-          <h2>Tools I’m<br />working with.</h2>
+          <h2>My working<br />toolbox<span class="heading-punctuation">_</span></h2>
           <div class="skill-groups">
             <div class="skill-group"><p>Languages</p><span class="skill-tech"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" alt="" />Python</span><span class="skill-tech"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg" alt="" />C++</span></div>
             <div class="skill-group"><p>Areas of interest</p><span>Financial technology</span><span>Machine learning</span><span>Software systems</span></div>
@@ -302,13 +328,15 @@
       </section>
 
       <section class="about container" id="about">
-        <p class="kicker">03 / About me</p>
+        <p class="kicker">[ 03 ] ~/about.md</p>
+        <p class="ascii-command"><span>~ $</span> cat about.md</p>
         <p class="statement"><span>I’m a </span><span class="highlight">student</span><span> from </span><span class="highlight">PES University, Bangalore</span><span>, with an interest in </span><span class="highlight">finance</span><span>, </span><span class="highlight">software development</span><span>, and </span><span class="highlight">ML</span><span>. I enjoy breaking down new ideas, building small projects around them, and improving as I go.</span></p>
       </section>
 
       <section class="contact container" id="contact">
-        <p class="kicker">04 / Contact</p>
-        <h2>Let’s get<br /><em>in touch.</em></h2>
+        <p class="kicker">[ 04 ] ~/contact</p>
+        <p class="ascii-command"><span>~ $</span> start a conversation</p>
+        <h2>Let’s build<br />something<span class="heading-punctuation">_</span></h2>
         <a class="email" href="mailto:nishantjakane425@gmail.com">nishantjakane425@gmail.com <span>↗</span></a>
       </section>
     </main>

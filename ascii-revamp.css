@@ -14,7 +14,7 @@ html:is([data-theme="night-pixel"],[data-theme="mono"]) body .nav > nav a.glass-
 html:is([data-theme="night-pixel"],[data-theme="mono"]) body :is(.liquid-button,.button,.project-link,.github-all,.email,footer a).glass-control { font:400 13px/1.2 var(--mono); letter-spacing:0; }
 body .hero { padding:72px 0 28px; }
 body .hero .theme-switch { position:static; display:flex; width:fit-content; max-width:100%; margin:0 0 28px auto; font:12px/1 var(--mono); }
-.hero-layout { display:grid; grid-template-columns:minmax(0,760px); align-items:center; gap:0; }
+.hero-layout { display:grid; grid-template-columns:minmax(0,1.9fr) minmax(0,1fr); align-items:center; gap:48px; }
 .hero-intro { min-width:0; container-type:inline-size; }
 html:is([data-theme="night-pixel"],[data-theme="mono"]) body h1.ascii-name { margin:0 0 30px; font-size:inherit; line-height:1; letter-spacing:0; text-shadow:none; text-transform:none; }
 .ascii-name__art { display:block; white-space:pre; width:fit-content; max-width:100%; font:400 10px/1.15 "Courier New",monospace; font-size:clamp(5px,2.55cqw,18px); color:var(--ink); letter-spacing:0; font-variant-ligatures:none; text-shadow:0 0 30px color-mix(in srgb,var(--signal) 14%,transparent); }
@@ -88,8 +88,8 @@ body .project-terminal .terminal-prompt { padding:18px 22px 6px; font-size:11px;
 body .terminal-notes { padding:6px 22px 8px; font-size:12px; line-height:1.9; }
 body .terminal-notes li { margin-bottom:12px; }
 body .project-terminal a { margin-left:22px; font-size:11px; }
-body .terminal-art { padding:16px 0; opacity:.65; }
-body .terminal-art pre { margin:0; font-size:clamp(4px,2.35cqw,8px); text-shadow:none; }
+body .terminal-art { padding:16px 0; opacity:1; }
+body .terminal-art pre { margin:0; font-size:clamp(4px,2.35cqw,8px); color:#fff; text-shadow:none; }
 body .project-terminal__bar { border:0; font-size:10px; padding:12px 22px 0; }
 body .project-terminal__bar > span { opacity:.4; }
 body .section-heading { grid-template-columns:minmax(0,1fr); gap:12px; }
@@ -112,7 +112,7 @@ body .project,body .project:hover { padding-block:32px; }
   .page-scrollbar:focus-visible { outline:1px solid var(--signal); outline-offset:2px; border-radius:6px; }
   .page-scrollbar__position { position:absolute; top:calc(100% + 10px); right:0; color:var(--muted); font:9px/1 var(--mono); }
 }
-@media (max-width:1000px) { .hero-layout { grid-template-columns:minmax(0,760px); } }
+@media (max-width:1000px) { .hero-layout { gap:26px; grid-template-columns:minmax(0,1.65fr) minmax(0,1fr); } }
 @media (max-width:900px) {
   body .project-preview-layout { grid-template-columns:minmax(0,1fr); padding:0; gap:0; }
   body .terminal-art { width:min(calc(100% - 44px),260px); margin:4px 22px 20px; padding-top:16px; }

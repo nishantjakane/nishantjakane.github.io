@@ -4,25 +4,26 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Nishant Jakane — student developer interested in finance, software, and machine learning." />
-    <title>Nishant Jakane — Portfolio</title>
-    <link rel="icon" type="image/svg+xml" href="favicon.svg?v=2" />
-    <link rel="alternate icon" href="favicon.svg?v=2" />
+    <title>Nishant Jakane — Terminal</title>
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg?v=2" />
+    <link rel="alternate icon" href="../favicon.svg?v=2" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@400;500;600&family=Unbounded:wght@400;500;600;700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="styles.css?v=4" />
-    <link id="nav-glass-preview" rel="stylesheet" href="navbar-glass-preview.css?v=6" />
-    <link rel="stylesheet" href="glass-controls.css?v=5" />
-    <link rel="stylesheet" href="glass-surfaces.css?v=1" />
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Pixelify+Sans:wght@400;500;600;700&family=VT323&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../styles.css?v=4" />
+    <link id="nav-glass-preview" rel="stylesheet" href="../navbar-glass-preview.css?v=6" />
+    <link rel="stylesheet" href="../glass-controls.css?v=5" />
+    <link rel="stylesheet" href="../glass-surfaces.css?v=1" />
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;700&family=Pixelify+Sans:wght@400;500;600;700&family=VT323&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="retro-glass.css?v=1" />
-    <link rel="stylesheet" href="dark-mode.css?v=2" />
-    <link rel="stylesheet" href="ambient-background.css?v=2" />
-    <link rel="stylesheet" href="skills-glass.css?v=1" />
-    <link rel="stylesheet" href="portfolio-effects.css?v=5" />
-    <link rel="stylesheet" href="version-switch.css?v=1" />
-    <link rel="stylesheet" href="ascii-revamp.css?v=7" />
+    <link rel="stylesheet" href="../retro-glass.css?v=1" />
+    <link rel="stylesheet" href="../dark-mode.css?v=2" />
+    <link rel="stylesheet" href="../ambient-background.css?v=2" />
+    <link rel="stylesheet" href="../skills-glass.css?v=1" />
+    <link rel="stylesheet" href="../portfolio-effects.css?v=5" />
+    <link rel="stylesheet" href="../version-switch.css?v=1" />
+    <link rel="stylesheet" href="../ascii-revamp.css?v=7" />
+    <link rel="stylesheet" href="terminal-cards.css?v=11" />
   </head>
   <body>
     <svg class="glass-filter" aria-hidden="true" focusable="false">
@@ -60,9 +61,9 @@
     <main id="top">
       <section class="hero container">
         <nav class="theme-switch version-switch" aria-label="Website version">
-          <a href="index.html" aria-current="page">Current</a>
-          <a href="classic/index.html">Classic</a>
-          <a href="terminal/index.html">Terminal</a>
+          <a href="../index.html">Current</a>
+          <a href="../classic/index.html">Classic</a>
+          <a href="index.html" aria-current="page">Terminal</a>
         </nav>
         <div class="eyebrow"><span class="status-dot"></span> Student developer <span class="hero-location">Bengaluru, IN</span></div>
         <div class="hero-layout">
@@ -105,28 +106,26 @@
       </section>
 
       <section class="work container" id="work">
-        <div class="section-heading"><p class="kicker">01 / Projects</p><h2>Built. Tested.<br />Learned.</h2></div>
+        <div class="section-heading"><p class="kicker">01 / Projects</p><h2 class="glass-heading"><span class="glass-heading__word">Built.</span> <span class="glass-heading__word" style="--reflection-delay:-.6s">Tested.</span><br /><span class="glass-heading__word" style="--reflection-delay:-1.2s">Learned.</span></h2></div>
         <div class="projects">
-          <article class="project featured">
-            <div class="project-index">01</div>
-            <div class="project-body">
-              <p class="project-type">C++ · FINANCE</p>
-              <h3 class="project-heading"><span class="project-heading__name">Orderbook Engine</span></h3>
-              <details class="project-preview">
-                <summary>Details <span aria-hidden="true">↗</span></summary>
-                <div class="project-terminal">
-                  <div class="project-terminal__bar"><span aria-hidden="true">● ● ●</span> README.md</div>
-                  <div class="project-preview-layout">
-                    <div class="terminal-copy">
-                  <p class="terminal-prompt"><span>nishant</span>:~$ <span class="terminal-command">about</span></p>
+          <article class="project terminal-project" aria-labelledby="terminal-project-1">
+            <div class="terminal-window__bar"><span class="terminal-window__dots" aria-hidden="true">● ● ●</span><span class="terminal-window__path">~/projects/01</span><a class="project-link" href="https://github.com/nishantjakane/orderbook-engine" target="_blank" rel="noreferrer" aria-label="View Orderbook Engine source on GitHub (opens in a new tab)"><span class="project-link__label">GitHub</span><span class="glass-arrow" aria-hidden="true">↗</span></a></div>
+            <div class="project-body terminal-window__body">
+              <div class="project-preview-layout">
+                <div class="terminal-copy">
+                  <h3 class="terminal-title" id="terminal-project-1"><span class="glass-heading__word">Orderbook Engine</span></h3>
+                  <p class="terminal-prompt"><span class="terminal-user">nishant:~$</span> <code class="terminal-command">./build/Release/OrderBook.exe</code></p>
                   <ul class="terminal-notes">
-                    <li>Built in C++ with CMake to match buy and sell orders using price-time priority.</li>
-                    <li>Handles partial fills, cancellations, and matching across price levels to model exchange trade execution.</li>
+                    <li>Built a C++ matching engine with CMake. Maintains <strong>2</strong> separate books—bids and asks—and matches orders by price, then arrival time.</li>
+                    <li>Handles partial fills, cancellations, and trades across multiple price levels to explore exchange mechanics.</li>
+                    <li>The README estimates <strong>~1–5M orders/sec</strong>; this is an estimate, not a formally measured benchmark.</li>
                   </ul>
+                  <div class="tech-stack" aria-label="Technologies: C++">
+                <span class="tech"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg" alt="" /> C++</span>
+              </div>
                   <a href="https://github.com/nishantjakane/orderbook-engine/blob/main/README.md" target="_blank" rel="noreferrer">Full README ↗</a>
                 </div>
-                  <!-- ANSI Shadow FIGlet lettering, generated from patorjk/figlet.js (TAAG). -->
-                  <div class="terminal-art" aria-hidden="true"><pre> ██████╗ ██████╗ ██████╗ ███████╗██████╗
+                <div class="terminal-art"><pre aria-hidden="true"> ██████╗ ██████╗ ██████╗ ███████╗██████╗
 ██╔═══██╗██╔══██╗██╔══██╗██╔════╝██╔══██╗
 ██║   ██║██████╔╝██║  ██║█████╗  ██████╔╝
 ██║   ██║██╔══██╗██║  ██║██╔══╝  ██╔══██╗
@@ -146,36 +145,27 @@
 ██╔══╝  ██║╚██╗██║██║   ██║██║██║╚██╗██║██╔══╝
 ███████╗██║ ╚████║╚██████╔╝██║██║ ╚████║███████╗
 ╚══════╝╚═╝  ╚═══╝ ╚═════╝ ╚═╝╚═╝  ╚═══╝╚══════╝</pre></div>
-                  </div>
-                </div>
-              </details>
-              <p>A C++ matching engine that models how an exchange pairs buyers and sellers.</p>
-              <div class="tech-stack" aria-label="Technologies: C++">
-                <span class="tech"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg" alt="" /> C++</span>
               </div>
             </div>
-            <a class="project-link" href="https://github.com/nishantjakane/orderbook-engine" target="_blank" rel="noreferrer" aria-label="View Orderbook Engine source on GitHub (opens in a new tab)"><span class="project-link__label">GitHub</span><span class="glass-arrow" aria-hidden="true">↗</span></a>
           </article>
-          <article class="project">
-            <div class="project-index">02</div>
-            <div class="project-body">
-              <p class="project-type">PYTHON · FINANCE</p>
-              <h3 class="project-heading"><span class="project-heading__name">BacktestKit</span></h3>
-              <details class="project-preview">
-                <summary>Details <span aria-hidden="true">↗</span></summary>
-                <div class="project-terminal">
-                  <div class="project-terminal__bar"><span aria-hidden="true">● ● ●</span> README.md</div>
-                  <div class="project-preview-layout">
-                    <div class="terminal-copy">
-                  <p class="terminal-prompt"><span>nishant</span>:~$ <span class="terminal-command">about</span></p>
+          <article class="project terminal-project" aria-labelledby="terminal-project-2">
+            <div class="terminal-window__bar"><span class="terminal-window__dots" aria-hidden="true">● ● ●</span><span class="terminal-window__path">~/projects/02</span><a class="project-link" href="https://github.com/nishantjakane/backtestkit" target="_blank" rel="noreferrer" aria-label="View BacktestKit source on GitHub (opens in a new tab)"><span class="project-link__label">GitHub</span><span class="glass-arrow" aria-hidden="true">↗</span></a></div>
+            <div class="project-body terminal-window__body">
+              <div class="project-preview-layout">
+                <div class="terminal-copy">
+                  <h3 class="terminal-title" id="terminal-project-2"><span class="glass-heading__word">BacktestKit</span></h3>
+                  <p class="terminal-prompt"><span class="terminal-user">nishant:~$</span> <code class="terminal-command">python backtest_kit.py</code></p>
                   <ul class="terminal-notes">
-                    <li>A Python framework for testing strategies on historical market data.</li>
-                    <li>Separates strategy, execution, and portfolio accounting into reusable modules. Work in progress.</li>
+                    <li>Building a modular Python framework to test trading ideas against historical market data.</li>
+                    <li>Separates <strong>6</strong> areas: data, strategies, execution, positions, trades, and portfolio/performance tracking.</li>
+                    <li>Reusable components avoid rebuilding execution and accounting for each strategy. Still in development, with a focus on transparent trade handling and portfolio calculations.</li>
                   </ul>
+                  <div class="tech-stack" aria-label="Technologies: Python">
+                <span class="tech"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" alt="" /> Python</span>
+              </div>
                   <a href="https://github.com/nishantjakane/backtestkit/blob/main/README.md" target="_blank" rel="noreferrer">Full README ↗</a>
                 </div>
-                  <!-- ANSI Shadow FIGlet lettering, generated from patorjk/figlet.js (TAAG). -->
-                  <div class="terminal-art" aria-hidden="true"><pre>██████╗  █████╗  ██████╗██╗  ██╗████████╗███████╗███████╗████████╗
+                <div class="terminal-art"><pre aria-hidden="true">██████╗  █████╗  ██████╗██╗  ██╗████████╗███████╗███████╗████████╗
 ██╔══██╗██╔══██╗██╔════╝██║ ██╔╝╚══██╔══╝██╔════╝██╔════╝╚══██╔══╝
 ██████╔╝███████║██║     █████╔╝    ██║   █████╗  ███████╗   ██║
 ██╔══██╗██╔══██║██║     ██╔═██╗    ██║   ██╔══╝  ╚════██║   ██║
@@ -188,36 +178,28 @@
 ██╔═██╗ ██║   ██║
 ██║  ██╗██║   ██║
 ╚═╝  ╚═╝╚═╝   ╚═╝</pre></div>
-                  </div>
-                </div>
-              </details>
-              <p>A modular Python backtesting framework. Work in progress.</p>
-              <div class="tech-stack" aria-label="Technologies: Python">
-                <span class="tech"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" alt="" /> Python</span>
               </div>
             </div>
-            <a class="project-link" href="https://github.com/nishantjakane/backtestkit" target="_blank" rel="noreferrer" aria-label="View BacktestKit source on GitHub (opens in a new tab)"><span class="project-link__label">GitHub</span><span class="glass-arrow" aria-hidden="true">↗</span></a>
           </article>
-          <article class="project">
-            <div class="project-index">03</div>
-            <div class="project-body">
-              <p class="project-type">PYTHON · MACHINE LEARNING</p>
-              <h3 class="project-heading"><span class="project-heading__name">CNN Chess Engine</span></h3>
-              <details class="project-preview">
-                <summary>Details <span aria-hidden="true">↗</span></summary>
-                <div class="project-terminal">
-                  <div class="project-terminal__bar"><span aria-hidden="true">● ● ●</span> README.md</div>
-                  <div class="project-preview-layout">
-                    <div class="terminal-copy">
-                  <p class="terminal-prompt"><span>nishant</span>:~$ <span class="terminal-command">about</span></p>
+          <article class="project terminal-project" aria-labelledby="terminal-project-3">
+            <div class="terminal-window__bar"><span class="terminal-window__dots" aria-hidden="true">● ● ●</span><span class="terminal-window__path">~/projects/03</span><a class="project-link" href="https://github.com/nishantjakane/cnn-chess-engine" target="_blank" rel="noreferrer" aria-label="View CNN Chess Engine source on GitHub (opens in a new tab)"><span class="project-link__label">GitHub</span><span class="glass-arrow" aria-hidden="true">↗</span></a></div>
+            <div class="project-body terminal-window__body">
+              <div class="project-preview-layout">
+                <div class="terminal-copy">
+                  <h3 class="terminal-title" id="terminal-project-3"><span class="glass-heading__word">CNN Chess Engine</span></h3>
+                  <p class="terminal-prompt"><span class="terminal-user">nishant:~$</span> <code class="terminal-command">python src/gm-move-engine/test.py</code></p>
                   <ul class="terminal-notes">
-                    <li>Python and TensorFlow experiments in Grandmaster move prediction and Stockfish evaluation approximation.</li>
-                    <li>Archived after neither approach produced competitive results; explored board representations and supervised-learning limits.</li>
+                    <li>Explored <strong>2</strong> CNN approaches using Python and TensorFlow: move prediction and position evaluation.</li>
+                    <li>Prepared board representations and datasets to train on Grandmaster moves, then experimented with approximating Stockfish evaluations.</li>
+                    <li>Neither approach produced a competitive engine. Archived as a record of what I learned about supervised-learning limits.</li>
                   </ul>
+                  <div class="tech-stack" aria-label="Technologies: Python and TensorFlow">
+                <span class="tech"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" alt="" /> Python</span>
+                <span class="tech"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tensorflow/tensorflow-original.svg" alt="" /> TensorFlow</span>
+              </div>
                   <a href="https://github.com/nishantjakane/cnn-chess-engine/blob/main/README.md" target="_blank" rel="noreferrer">Full README ↗</a>
                 </div>
-                  <!-- ANSI Shadow FIGlet lettering, generated from patorjk/figlet.js (TAAG). -->
-                  <div class="terminal-art" aria-hidden="true"><pre> ██████╗███╗   ██╗███╗   ██╗
+                <div class="terminal-art"><pre aria-hidden="true"> ██████╗███╗   ██╗███╗   ██╗
 ██╔════╝████╗  ██║████╗  ██║
 ██║     ██╔██╗ ██║██╔██╗ ██║
 ██║     ██║╚██╗██║██║╚██╗██║
@@ -237,37 +219,28 @@
 ██╔══╝  ██║╚██╗██║██║   ██║██║██║╚██╗██║██╔══╝
 ███████╗██║ ╚████║╚██████╔╝██║██║ ╚████║███████╗
 ╚══════╝╚═╝  ╚═══╝ ╚═════╝ ╚═╝╚═╝  ╚═══╝╚══════╝</pre></div>
-                  </div>
-                </div>
-              </details>
-              <p>A Python and TensorFlow chess experiment, archived with lessons learned.</p>
-              <div class="tech-stack" aria-label="Technologies: Python and TensorFlow">
-                <span class="tech"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" alt="" /> Python</span>
-                <span class="tech"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tensorflow/tensorflow-original.svg" alt="" /> TensorFlow</span>
               </div>
             </div>
-            <a class="project-link" href="https://github.com/nishantjakane/cnn-chess-engine" target="_blank" rel="noreferrer" aria-label="View CNN Chess Engine source on GitHub (opens in a new tab)"><span class="project-link__label">GitHub</span><span class="glass-arrow" aria-hidden="true">↗</span></a>
           </article>
-          <article class="project">
-            <div class="project-index">04</div>
-            <div class="project-body">
-              <p class="project-type">DATA · EDUCATION</p>
-              <h3 class="project-heading"><span class="project-heading__name">KCET Answer Key</span></h3>
-              <details class="project-preview">
-                <summary>Details <span aria-hidden="true">↗</span></summary>
-                <div class="project-terminal">
-                  <div class="project-terminal__bar"><span aria-hidden="true">● ● ●</span> README.md</div>
-                  <div class="project-preview-layout">
-                    <div class="terminal-copy">
-                  <p class="terminal-prompt"><span>nishant</span>:~$ <span class="terminal-command">about</span></p>
+          <article class="project terminal-project" aria-labelledby="terminal-project-4">
+            <div class="terminal-window__bar"><span class="terminal-window__dots" aria-hidden="true">● ● ●</span><span class="terminal-window__path">~/projects/04</span><a class="project-link" href="https://github.com/nishantjakane/kcetanswerkey" target="_blank" rel="noreferrer" aria-label="View KCET Answer Key source on GitHub (opens in a new tab)"><span class="project-link__label">GitHub</span><span class="glass-arrow" aria-hidden="true">↗</span></a></div>
+            <div class="project-body terminal-window__body">
+              <div class="project-preview-layout">
+                <div class="terminal-copy">
+                  <h3 class="terminal-title" id="terminal-project-4"><span class="glass-heading__word">KCET Answer Key</span></h3>
+                  <p class="terminal-prompt"><span class="terminal-user">nishant:~$</span> <code class="terminal-command">start https://kcetanswerkey.vercel.app</code></p>
                   <ul class="terminal-notes">
-                    <li>Used Python and image preprocessing to score 900,000+ OMR scans for nearly 300,000 students.</li>
-                    <li>Handled noisy sheets with a reported 2–3% error rate, then used the dataset to predict ranks.</li>
+                    <li>Processed <strong>900,000+</strong> publicly released OMR scans using Python, image preprocessing, and answer extraction.</li>
+                    <li>Estimated marks for nearly <strong>300,000</strong> students with a reported error rate of around <strong>2–3%</strong>, then used those scores to build a rank predictor.</li>
+                    <li>The accompanying website reached <strong>20,000+</strong> visitors; rank predictions were compared with other public predictors.</li>
                   </ul>
+                  <div class="tech-stack" aria-label="Technologies: Python and data analysis">
+                <span class="tech"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" alt="" /> Python</span>
+                <span class="tech">Data analysis</span>
+              </div>
                   <a href="https://github.com/nishantjakane/kcetanswerkey/blob/main/README.md" target="_blank" rel="noreferrer">Full README ↗</a>
                 </div>
-                  <!-- ANSI Shadow FIGlet lettering, generated from patorjk/figlet.js (TAAG). -->
-                  <div class="terminal-art" aria-hidden="true"><pre>██╗  ██╗ ██████╗███████╗████████╗
+                <div class="terminal-art"><pre aria-hidden="true">██╗  ██╗ ██████╗███████╗████████╗
 ██║ ██╔╝██╔════╝██╔════╝╚══██╔══╝
 █████╔╝ ██║     █████╗     ██║
 ██╔═██╗ ██║     ██╔══╝     ██║
@@ -287,16 +260,8 @@
 ██╔═██╗ ██╔══╝    ╚██╔╝
 ██║  ██╗███████╗   ██║
 ╚═╝  ╚═╝╚══════╝   ╚═╝</pre></div>
-                  </div>
-                </div>
-              </details>
-              <p>Turning scanned KCET answer sheets into estimated marks and rank predictions for students.</p>
-              <div class="tech-stack" aria-label="Technologies: Python and data analysis">
-                <span class="tech"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" alt="" /> Python</span>
-                <span class="tech">Data analysis</span>
               </div>
             </div>
-            <a class="project-link" href="https://github.com/nishantjakane/kcetanswerkey" target="_blank" rel="noreferrer" aria-label="View KCET Answer Key source on GitHub (opens in a new tab)"><span class="project-link__label">GitHub</span><span class="glass-arrow" aria-hidden="true">↗</span></a>
           </article>
         </div>
         <a class="github-all" href="https://github.com/nishantjakane" target="_blank" rel="noreferrer"><span class="github-all__label">Explore all repositories on GitHub</span><span class="github-all__mark" aria-hidden="true">↗</span></a>
@@ -305,7 +270,7 @@
       <section class="skills container" id="skills">
         <p class="kicker">02 / Skills</p>
         <div class="skills-layout">
-          <h2>My working<br />toolbox<span class="heading-punctuation">_</span></h2>
+          <h2 class="glass-heading"><span class="glass-heading__word">My working</span><br /><span class="glass-heading__word" style="--reflection-delay:-.6s">toolbox_</span></h2>
           <div class="skill-groups">
             <div class="skill-group"><p>Languages</p><span class="skill-tech"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" alt="" />Python</span><span class="skill-tech"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg" alt="" />C++</span><span class="skill-tech"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" alt="" />HTML</span><span class="skill-tech"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" alt="" />CSS</span></div>
             <div class="skill-group"><p>Areas of interest</p><span>Financial technology</span><span>Machine learning</span><span>Software systems</span></div>
@@ -316,22 +281,31 @@
 
       <section class="about container" id="about">
         <p class="kicker">03 / About</p>
-        <p class="statement"><span>I’m a </span><span class="highlight">student</span><span> from </span><span class="highlight">PES University, Bangalore</span><span>, with an interest in </span><span class="highlight">finance</span><span>, </span><span class="highlight">software development</span><span>, and </span><span class="highlight">ML</span><span>. I enjoy breaking down new ideas, building small projects around them, and improving as I go.</span></p>
+        <p class="statement"><span>I’m a </span><span class="highlight"><span class="glass-heading__word">student</span></span><span> from </span><span class="highlight"><span class="glass-heading__word">PES University, Bangalore</span></span><span>, with an interest in </span><span class="highlight"><span class="glass-heading__word">finance</span></span><span>, </span><span class="highlight"><span class="glass-heading__word">software development</span></span><span>, and </span><span class="highlight"><span class="glass-heading__word">ML</span></span><span>. I enjoy breaking down new ideas, building small projects around them, and improving as I go.</span></p>
       </section>
 
       <section class="contact container" id="contact">
         <p class="kicker">04 / Contact</p>
-        <h2>Let’s talk.</h2>
+        <h2 class="glass-heading"><span class="glass-heading__word">Let’s talk.</span></h2>
         <a class="email" href="mailto:nishantjakane425@gmail.com">nishantjakane425@gmail.com <span>↗</span></a>
       </section>
     </main>
 
-    <footer class="container"><span>© <span id="year"></span> Nishant Jakane</span><a href="#top">Back to top ↑</a></footer>
-    <script src="script.js?v=7"></script>
-    <script src="background-glass.js?v=2"></script>
-    <script src="ambient-background.js?v=2"></script>
-    <script src="skills-glass.js?v=1"></script>
-    <script src="portfolio-effects.js?v=3"></script>
-    <script src="ascii-ui.js?v=2"></script>
+    <footer class="container terminal-footer">
+      <div class="terminal-footer__bar"><span>~/nishant / portfolio</span><span class="terminal-footer__status"><span aria-hidden="true">●</span> session complete</span></div>
+      <div class="terminal-footer__body">
+        <div><p class="terminal-footer__signoff"><span aria-hidden="true">~ $</span> Thanks for stopping by<span class="terminal-footer__cursor" aria-hidden="true">_</span></p><p class="terminal-footer__note">Still learning. Always building.</p></div>
+        <a href="#top" aria-label="Back to top">Back to top ↑</a>
+      </div>
+      <div class="terminal-footer__bottom"><span>© <span id="year"></span> Nishant Jakane</span><span>Bengaluru, IN</span></div>
+    </footer>
+    <script src="../script.js?v=7"></script>
+    <script src="../background-glass.js?v=2"></script>
+    <script src="../ambient-background.js?v=2"></script>
+    <script src="../skills-glass.js?v=1"></script>
+    <script src="../portfolio-effects.js?v=3"></script>
+    <script src="../ascii-ui.js?v=2"></script>
+    <script src="glass-hover.js?v=2"></script>
+    <script src="terminal-ascii.js?v=1"></script>
   </body>
 </html>

@@ -1,6 +1,0 @@
-/* Both preserved designs use Mono; these links choose a website version. */
-body .hero .version-switch { position:static; display:flex; align-items:center; width:fit-content; max-width:100%; margin:0 0 28px auto; gap:4px; }
-.version-switch a[aria-current="page"] { color:#101010; background:#e7e7e5; }
-.version-switch a { font-family:"IBM Plex Mono",monospace; font-size:12px; text-transform:none; }
-.version-switch .theme-switch__label { font:11px/1 "IBM Plex Mono",monospace; letter-spacing:0; }
-@media (max-width:430px) { .version-switch a { font-size:11px; padding-inline:10px; } .version-switch .theme-switch__label { font-size:10px; padding-inline:5px; } }

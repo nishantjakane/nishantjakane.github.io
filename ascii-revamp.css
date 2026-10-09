@@ -14,7 +14,7 @@ html:is([data-theme="night-pixel"],[data-theme="mono"]) body .nav > nav a.glass-
 html:is([data-theme="night-pixel"],[data-theme="mono"]) body :is(.liquid-button,.button,.project-link,.github-all,.email,footer a).glass-control { font:400 13px/1.2 var(--mono); letter-spacing:0; }
 body .hero { padding:72px 0 28px; }
 body .hero .theme-switch { position:static; display:flex; width:fit-content; max-width:100%; margin:0 0 28px auto; font:12px/1 var(--mono); }
-.hero-layout { display:grid; grid-template-columns:minmax(0,1.9fr) minmax(0,1fr); align-items:center; gap:48px; }
+.hero-layout { display:grid; grid-template-columns:minmax(0,760px); align-items:center; gap:0; }
 .hero-intro { min-width:0; container-type:inline-size; }
 html:is([data-theme="night-pixel"],[data-theme="mono"]) body h1.ascii-name { margin:0 0 30px; font-size:inherit; line-height:1; letter-spacing:0; text-shadow:none; text-transform:none; }
 .ascii-name__art { display:block; white-space:pre; width:fit-content; max-width:100%; font:400 10px/1.15 "Courier New",monospace; font-size:clamp(5px,2.55cqw,18px); color:var(--ink); letter-spacing:0; font-variant-ligatures:none; text-shadow:0 0 30px color-mix(in srgb,var(--signal) 14%,transparent); }
@@ -60,7 +60,7 @@ body .project, body .project:hover { grid-template-columns:52px minmax(0,1fr) 92
 html:is([data-theme="night-pixel"],[data-theme="mono"]) body .project-heading { letter-spacing:0; margin:8px 0 22px; }
 .project-heading__file { display:block; width:fit-content; color:var(--signal); font:11px/1.5 var(--mono); letter-spacing:.04em; margin-bottom:14px; padding-left:12px; border-left:2px solid color-mix(in srgb,var(--signal) 65%,transparent); }
 .project-heading__name { position:relative; display:inline-block; padding-bottom:12px; color:var(--ink); font:700 clamp(30px,3.2vw,46px)/1.12 "Space Grotesk",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; letter-spacing:-.04em; text-transform:none; text-shadow:0 2px 18px color-mix(in srgb,var(--signal) 10%,transparent); }
-.project-heading__name::after { content:""; position:absolute; bottom:0; left:0; width:48px; height:2px; background:var(--signal); opacity:.5; transform-origin:left; transition:width .55s cubic-bezier(.22,1,.36,1),opacity .35s ease; }
+.project-heading__name::after { content:none; }
 .project-heading__bracket { display:inline-block; color:var(--signal); opacity:.4; font:400 .75em/1 var(--mono); vertical-align:.05em; transition:opacity .35s ease; }
 .project:is(:hover,:focus-within) .project-heading__name::after { width:100%; opacity:.9; }
 .project:is(:hover,:focus-within) .project-heading__bracket { opacity:1; }
@@ -78,8 +78,24 @@ body .about > .ascii-command { margin-bottom:24px; }
 body .contact h2 { margin:26px 0 32px; }
 body .contact .email { max-width:100%; overflow-wrap:anywhere; }
 body footer { font:11px/1.6 var(--mono); }
-body .ambient-field { opacity:.45; }
-body .ios-glass-backdrop::before { opacity:.5; }
+body .ambient-field { opacity:.2; }
+body .ambient-field__ribbon { display:none; }
+body .ios-glass-backdrop::before { opacity:.3; }
+/* Minimal interiors keep concise notes alongside quieter ASCII lettering. */
+body .project-preview summary::before { content:none; }
+body .project-preview-layout { grid-template-columns:minmax(0,1.8fr) minmax(0,1fr); gap:28px; padding:4px 22px 8px 0; }
+body .project-terminal .terminal-prompt { padding:18px 22px 6px; font-size:11px; }
+body .terminal-notes { padding:6px 22px 8px; font-size:12px; line-height:1.9; }
+body .terminal-notes li { margin-bottom:12px; }
+body .project-terminal a { margin-left:22px; font-size:11px; }
+body .terminal-art { padding:16px 0; opacity:.65; }
+body .terminal-art pre { margin:0; font-size:clamp(4px,2.35cqw,8px); text-shadow:none; }
+body .project-terminal__bar { border:0; font-size:10px; padding:12px 22px 0; }
+body .project-terminal__bar > span { opacity:.4; }
+body .section-heading { grid-template-columns:minmax(0,1fr); gap:12px; }
+body .skill-group > p::before { content:none; }
+body .page-scrollbar__position { display:none; }
+body .project,body .project:hover { padding-block:32px; }
 @keyframes ascii-blink { 50% { opacity:0; } }
 @keyframes ascii-type { from { clip-path:inset(0 100% 0 0); } to { clip-path:inset(0); } }
 @keyframes ascii-type-cursor { 0% { left:0; opacity:1; } 99% { opacity:1; } 100% { left:100%; opacity:0; } }
@@ -96,7 +112,12 @@ body .ios-glass-backdrop::before { opacity:.5; }
   .page-scrollbar:focus-visible { outline:1px solid var(--signal); outline-offset:2px; border-radius:6px; }
   .page-scrollbar__position { position:absolute; top:calc(100% + 10px); right:0; color:var(--muted); font:9px/1 var(--mono); }
 }
-@media (max-width:1000px) { .hero-layout { gap:26px; grid-template-columns:minmax(0,1.65fr) minmax(0,1fr); } }
+@media (max-width:1000px) { .hero-layout { grid-template-columns:minmax(0,760px); } }
+@media (max-width:900px) {
+  body .project-preview-layout { grid-template-columns:minmax(0,1fr); padding:0; gap:0; }
+  body .terminal-art { width:min(calc(100% - 44px),260px); margin:4px 22px 20px; padding-top:16px; }
+  body .terminal-art pre { font-size:clamp(4px,2.35cqw,6px); }
+}
 @media (max-width:760px) {
   body .project, body .project:hover { grid-template-columns:24px minmax(0,1fr) 88px; }
   body .hero { padding:52px 0 24px; }

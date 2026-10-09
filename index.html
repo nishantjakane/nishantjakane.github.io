@@ -15,14 +15,12 @@
     <link rel="stylesheet" href="glass-controls.css?v=5" />
     <link rel="stylesheet" href="glass-surfaces.css?v=1" />
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Pixelify+Sans:wght@400;500;600;700&family=VT323&display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="retro-glass.css?v=1" />
     <link rel="stylesheet" href="dark-mode.css?v=2" />
     <link rel="stylesheet" href="ambient-background.css?v=2" />
     <link rel="stylesheet" href="skills-glass.css?v=1" />
     <link rel="stylesheet" href="portfolio-effects.css?v=5" />
     <link rel="stylesheet" href="version-switch.css?v=1" />
-    <link rel="stylesheet" href="ascii-revamp.css?v=7" />
   </head>
   <body>
     <svg class="glass-filter" aria-hidden="true" focusable="false">
@@ -60,26 +58,13 @@
     <main id="top">
       <section class="hero container">
         <nav class="theme-switch version-switch" aria-label="Website version">
-          <a href="index.html" aria-current="page">Current</a>
-          <a href="classic/index.html">Classic</a>
-          <a href="terminal/index.html">Terminal</a>
+          <span class="theme-switch__label">[ version ]</span>
+          <span aria-current="page">Classic archive</span>
         </nav>
-        <div class="eyebrow"><span class="status-dot"></span> Student developer <span class="hero-location">Bengaluru, IN</span></div>
-        <div class="hero-layout">
-        <div class="hero-intro">
-        <h1 class="ascii-name"><span class="sr-only">Nishant Jakane.</span><span class="ascii-name__art" aria-hidden="true"><span class="ascii-name__word" style="--type-delay:0s;--type-steps:7"><span class="ascii-name__ink">███╗   ██╗██╗███████╗██╗  ██╗ █████╗ ███╗   ██╗████████╗
-████╗  ██║██║██╔════╝██║  ██║██╔══██╗████╗  ██║╚══██╔══╝
-██╔██╗ ██║██║███████╗███████║███████║██╔██╗ ██║   ██║
-██║╚██╗██║██║╚════██║██╔══██║██╔══██║██║╚██╗██║   ██║
-██║ ╚████║██║███████║██║  ██║██║  ██║██║ ╚████║   ██║
-╚═╝  ╚═══╝╚═╝╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═══╝   ╚═╝</span></span>
-<span class="ascii-name__word" style="--type-delay:1.05s;--type-steps:6"><span class="ascii-name__ink">     ██╗ █████╗ ██╗  ██╗ █████╗ ███╗   ██╗███████╗
-     ██║██╔══██╗██║ ██╔╝██╔══██╗████╗  ██║██╔════╝
-     ██║███████║█████╔╝ ███████║██╔██╗ ██║█████╗
-██   ██║██╔══██║██╔═██╗ ██╔══██║██║╚██╗██║██╔══╝
-╚█████╔╝██║  ██║██║  ██╗██║  ██║██║ ╚████║███████╗
- ╚════╝ ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═══╝╚══════╝</span></span></span></h1>
-        <p class="hero-copy">Student at PES University, Bengaluru. Building software to understand finance, systems, and machine learning.</p>
+        <div class="eyebrow"><span class="status-dot"></span> Student developer · Bengaluru, India</div>
+        <h1>Nishant<br /><em>Jakane.</em></h1>
+        <p class="hero-focus">Building projects in finance &amp; technology.</p>
+        <p class="hero-copy">I’m Nishant Jakane, a student at PES University, Bangalore. I enjoy learning by building software projects around finance, systems, and machine learning.</p>
         <div class="hero-actions">
           <div class="fx-layer">
             <a class="liquid-button" href="#work" style="--w: 190px; --h: 52px; --tr: 18%;">
@@ -92,41 +77,32 @@
           </div>
           <a class="button quiet" href="#contact">Get in touch <span>↘</span></a>
         </div>
-        </div>
-        <aside class="identity-terminal" aria-label="A quick introduction">
-          <div class="identity-terminal__bar"><span aria-hidden="true">+ -- --</span> ~/nishant</div>
-          <p class="ascii-command"><span>~ $</span> whoami</p>
-          <p>Student developer<br /><span class="identity-muted">PES University, Bangalore</span></p>
-          <p class="ascii-command"><span>~ $</span> ls interests/</p>
-          <ul class="ascii-tree"><li>finance/</li><li>software-systems/</li><li>machine-learning/</li></ul>
-          <div class="identity-terminal__footer"><span aria-hidden="true">[ + ]</span> Learning by building.</div>
-        </aside>
-        </div>
       </section>
 
       <section class="work container" id="work">
-        <div class="section-heading"><p class="kicker">01 / Projects</p><h2>Built. Tested.<br />Learned.</h2></div>
+        <div class="section-heading"><p class="kicker">01 / Projects</p><h2>Things I’ve been<br />building and learning.</h2></div>
         <div class="projects">
           <article class="project featured">
             <div class="project-index">01</div>
             <div class="project-body">
               <p class="project-type">C++ · FINANCE</p>
-              <h3 class="project-heading"><span class="project-heading__name">Orderbook Engine</span></h3>
+              <h3>Orderbook Engine</h3>
               <details class="project-preview">
-                <summary>Details <span aria-hidden="true">↗</span></summary>
+                <summary>Project snapshot <span aria-hidden="true">↗</span></summary>
                 <div class="project-terminal">
-                  <div class="project-terminal__bar"><span aria-hidden="true">● ● ●</span> README.md</div>
+                  <div class="project-terminal__bar"><span aria-hidden="true">● ● ●</span> orderbook-engine / README</div>
                   <div class="project-preview-layout">
                     <div class="terminal-copy">
-                  <p class="terminal-prompt"><span>nishant</span>:~$ <span class="terminal-command">about</span></p>
+                  <p class="terminal-prompt"><span>nishant@portfolio</span>:~$ <span class="terminal-command">about orderbook-engine</span></p>
                   <ul class="terminal-notes">
-                    <li>Built in C++ with CMake to match buy and sell orders using price-time priority.</li>
-                    <li>Handles partial fills, cancellations, and matching across price levels to model exchange trade execution.</li>
+                    <li>I built a limit order book from scratch in C++, using CMake to build the engine.</li>
+                    <li>It matches incoming buy and sell orders by price, then arrival time, handling partial fills, cancellations, and trades across multiple price levels.</li>
+                    <li>The project helped me understand how an exchange turns available liquidity into executed trades.</li>
                   </ul>
-                  <a href="https://github.com/nishantjakane/orderbook-engine/blob/main/README.md" target="_blank" rel="noreferrer">Full README ↗</a>
+                  <a href="https://github.com/nishantjakane/orderbook-engine/blob/main/README.md" target="_blank" rel="noreferrer">Read the README ↗</a>
                 </div>
                   <!-- ANSI Shadow FIGlet lettering, generated from patorjk/figlet.js (TAAG). -->
-                  <div class="terminal-art" aria-hidden="true"><pre> ██████╗ ██████╗ ██████╗ ███████╗██████╗
+                  <div class="terminal-art" aria-hidden="true"><span class="terminal-art__label">PROJECT / 01</span><pre> ██████╗ ██████╗ ██████╗ ███████╗██████╗
 ██╔═══██╗██╔══██╗██╔══██╗██╔════╝██╔══██╗
 ██║   ██║██████╔╝██║  ██║█████╗  ██████╔╝
 ██║   ██║██╔══██╗██║  ██║██╔══╝  ██╔══██╗
@@ -145,7 +121,7 @@
 █████╗  ██╔██╗ ██║██║  ███╗██║██╔██╗ ██║█████╗
 ██╔══╝  ██║╚██╗██║██║   ██║██║██║╚██╗██║██╔══╝
 ███████╗██║ ╚████║╚██████╔╝██║██║ ╚████║███████╗
-╚══════╝╚═╝  ╚═══╝ ╚═════╝ ╚═╝╚═╝  ╚═══╝╚══════╝</pre></div>
+╚══════╝╚═╝  ╚═══╝ ╚═════╝ ╚═╝╚═╝  ╚═══╝╚══════╝</pre><span class="terminal-art__caption">[ MATCHING ENGINE ]</span></div>
                   </div>
                 </div>
               </details>
@@ -154,28 +130,29 @@
                 <span class="tech"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg" alt="" /> C++</span>
               </div>
             </div>
-            <a class="project-link" href="https://github.com/nishantjakane/orderbook-engine" target="_blank" rel="noreferrer" aria-label="View Orderbook Engine source on GitHub (opens in a new tab)"><span class="project-link__label">GitHub</span><span class="glass-arrow" aria-hidden="true">↗</span></a>
+            <a class="project-link" href="https://github.com/nishantjakane/orderbook-engine" target="_blank" rel="noreferrer" aria-label="Open Orderbook Engine on GitHub">↗</a>
           </article>
           <article class="project">
             <div class="project-index">02</div>
             <div class="project-body">
               <p class="project-type">PYTHON · FINANCE</p>
-              <h3 class="project-heading"><span class="project-heading__name">BacktestKit</span></h3>
+              <h3>BacktestKit</h3>
               <details class="project-preview">
-                <summary>Details <span aria-hidden="true">↗</span></summary>
+                <summary>Project snapshot <span aria-hidden="true">↗</span></summary>
                 <div class="project-terminal">
-                  <div class="project-terminal__bar"><span aria-hidden="true">● ● ●</span> README.md</div>
+                  <div class="project-terminal__bar"><span aria-hidden="true">● ● ●</span> backtestkit / README</div>
                   <div class="project-preview-layout">
                     <div class="terminal-copy">
-                  <p class="terminal-prompt"><span>nishant</span>:~$ <span class="terminal-command">about</span></p>
+                  <p class="terminal-prompt"><span>nishant@portfolio</span>:~$ <span class="terminal-command">about backtestkit</span></p>
                   <ul class="terminal-notes">
-                    <li>A Python framework for testing strategies on historical market data.</li>
-                    <li>Separates strategy, execution, and portfolio accounting into reusable modules. Work in progress.</li>
+                    <li>I’m building a modular Python framework for testing trading strategies against historical market data.</li>
+                    <li>It separates market data, strategy logic, execution, and portfolio accounting so I can try new ideas without rebuilding the same infrastructure.</li>
+                    <li>It’s still a work in progress, focused on making positions, trades, and performance calculations easier to understand and inspect.</li>
                   </ul>
-                  <a href="https://github.com/nishantjakane/backtestkit/blob/main/README.md" target="_blank" rel="noreferrer">Full README ↗</a>
+                  <a href="https://github.com/nishantjakane/backtestkit/blob/main/README.md" target="_blank" rel="noreferrer">Read the README ↗</a>
                 </div>
                   <!-- ANSI Shadow FIGlet lettering, generated from patorjk/figlet.js (TAAG). -->
-                  <div class="terminal-art" aria-hidden="true"><pre>██████╗  █████╗  ██████╗██╗  ██╗████████╗███████╗███████╗████████╗
+                  <div class="terminal-art" aria-hidden="true"><span class="terminal-art__label">PROJECT / 02</span><pre>██████╗  █████╗  ██████╗██╗  ██╗████████╗███████╗███████╗████████╗
 ██╔══██╗██╔══██╗██╔════╝██║ ██╔╝╚══██╔══╝██╔════╝██╔════╝╚══██╔══╝
 ██████╔╝███████║██║     █████╔╝    ██║   █████╗  ███████╗   ██║
 ██╔══██╗██╔══██║██║     ██╔═██╗    ██║   ██╔══╝  ╚════██║   ██║
@@ -187,37 +164,38 @@
 █████╔╝ ██║   ██║
 ██╔═██╗ ██║   ██║
 ██║  ██╗██║   ██║
-╚═╝  ╚═╝╚═╝   ╚═╝</pre></div>
+╚═╝  ╚═╝╚═╝   ╚═╝</pre><span class="terminal-art__caption">[ STRATEGY LAB ]</span></div>
                   </div>
                 </div>
               </details>
-              <p>A modular Python backtesting framework. Work in progress.</p>
+              <p>A reusable Python foundation for testing trading ideas, with the mechanics kept visible. Still in development.</p>
               <div class="tech-stack" aria-label="Technologies: Python">
                 <span class="tech"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" alt="" /> Python</span>
               </div>
             </div>
-            <a class="project-link" href="https://github.com/nishantjakane/backtestkit" target="_blank" rel="noreferrer" aria-label="View BacktestKit source on GitHub (opens in a new tab)"><span class="project-link__label">GitHub</span><span class="glass-arrow" aria-hidden="true">↗</span></a>
+            <a class="project-link" href="https://github.com/nishantjakane/backtestkit" target="_blank" rel="noreferrer" aria-label="Open BacktestKit on GitHub">↗</a>
           </article>
           <article class="project">
             <div class="project-index">03</div>
             <div class="project-body">
               <p class="project-type">PYTHON · MACHINE LEARNING</p>
-              <h3 class="project-heading"><span class="project-heading__name">CNN Chess Engine</span></h3>
+              <h3>CNN Chess Engine</h3>
               <details class="project-preview">
-                <summary>Details <span aria-hidden="true">↗</span></summary>
+                <summary>Project snapshot <span aria-hidden="true">↗</span></summary>
                 <div class="project-terminal">
-                  <div class="project-terminal__bar"><span aria-hidden="true">● ● ●</span> README.md</div>
+                  <div class="project-terminal__bar"><span aria-hidden="true">● ● ●</span> cnn-chess-engine / README</div>
                   <div class="project-preview-layout">
                     <div class="terminal-copy">
-                  <p class="terminal-prompt"><span>nishant</span>:~$ <span class="terminal-command">about</span></p>
+                  <p class="terminal-prompt"><span>nishant@portfolio</span>:~$ <span class="terminal-command">about cnn-chess-engine</span></p>
                   <ul class="terminal-notes">
-                    <li>Python and TensorFlow experiments in Grandmaster move prediction and Stockfish evaluation approximation.</li>
-                    <li>Archived after neither approach produced competitive results; explored board representations and supervised-learning limits.</li>
+                    <li>I used Python and TensorFlow to explore whether a convolutional neural network could learn useful chess decisions.</li>
+                    <li>I tried predicting moves from Grandmaster games and approximating Stockfish’s position evaluations.</li>
+                    <li>Neither approach produced a competitive engine. The archived experiment taught me about board representations, training data, and the limits of supervised learning for chess.</li>
                   </ul>
-                  <a href="https://github.com/nishantjakane/cnn-chess-engine/blob/main/README.md" target="_blank" rel="noreferrer">Full README ↗</a>
+                  <a href="https://github.com/nishantjakane/cnn-chess-engine/blob/main/README.md" target="_blank" rel="noreferrer">Read the README ↗</a>
                 </div>
                   <!-- ANSI Shadow FIGlet lettering, generated from patorjk/figlet.js (TAAG). -->
-                  <div class="terminal-art" aria-hidden="true"><pre> ██████╗███╗   ██╗███╗   ██╗
+                  <div class="terminal-art" aria-hidden="true"><span class="terminal-art__label">PROJECT / 03</span><pre> ██████╗███╗   ██╗███╗   ██╗
 ██╔════╝████╗  ██║████╗  ██║
 ██║     ██╔██╗ ██║██╔██╗ ██║
 ██║     ██║╚██╗██║██║╚██╗██║
@@ -236,38 +214,39 @@
 █████╗  ██╔██╗ ██║██║  ███╗██║██╔██╗ ██║█████╗
 ██╔══╝  ██║╚██╗██║██║   ██║██║██║╚██╗██║██╔══╝
 ███████╗██║ ╚████║╚██████╔╝██║██║ ╚████║███████╗
-╚══════╝╚═╝  ╚═══╝ ╚═════╝ ╚═╝╚═╝  ╚═══╝╚══════╝</pre></div>
+╚══════╝╚═╝  ╚═══╝ ╚═════╝ ╚═╝╚═╝  ╚═══╝╚══════╝</pre><span class="terminal-art__caption">[ NEURAL EXPERIMENT ]</span></div>
                   </div>
                 </div>
               </details>
-              <p>A Python and TensorFlow chess experiment, archived with lessons learned.</p>
+              <p>An archived chess-learning experiment in Python and TensorFlow—what worked as a learning exercise, and what didn’t work as an engine.</p>
               <div class="tech-stack" aria-label="Technologies: Python and TensorFlow">
                 <span class="tech"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" alt="" /> Python</span>
                 <span class="tech"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tensorflow/tensorflow-original.svg" alt="" /> TensorFlow</span>
               </div>
             </div>
-            <a class="project-link" href="https://github.com/nishantjakane/cnn-chess-engine" target="_blank" rel="noreferrer" aria-label="View CNN Chess Engine source on GitHub (opens in a new tab)"><span class="project-link__label">GitHub</span><span class="glass-arrow" aria-hidden="true">↗</span></a>
+            <a class="project-link" href="https://github.com/nishantjakane/cnn-chess-engine" target="_blank" rel="noreferrer" aria-label="Open CNN Chess Engine on GitHub">↗</a>
           </article>
           <article class="project">
             <div class="project-index">04</div>
             <div class="project-body">
               <p class="project-type">DATA · EDUCATION</p>
-              <h3 class="project-heading"><span class="project-heading__name">KCET Answer Key</span></h3>
+              <h3>KCET Answer Key</h3>
               <details class="project-preview">
-                <summary>Details <span aria-hidden="true">↗</span></summary>
+                <summary>Project snapshot <span aria-hidden="true">↗</span></summary>
                 <div class="project-terminal">
-                  <div class="project-terminal__bar"><span aria-hidden="true">● ● ●</span> README.md</div>
+                  <div class="project-terminal__bar"><span aria-hidden="true">● ● ●</span> kcetanswerkey / README</div>
                   <div class="project-preview-layout">
                     <div class="terminal-copy">
-                  <p class="terminal-prompt"><span>nishant</span>:~$ <span class="terminal-command">about</span></p>
+                  <p class="terminal-prompt"><span>nishant@portfolio</span>:~$ <span class="terminal-command">about kcetanswerkey</span></p>
                   <ul class="terminal-notes">
-                    <li>Used Python and image preprocessing to score 900,000+ OMR scans for nearly 300,000 students.</li>
-                    <li>Handled noisy sheets with a reported 2–3% error rate, then used the dataset to predict ranks.</li>
+                    <li>I used Python, image preprocessing, and data analysis to extract answers from 900,000+ publicly released KCET OMR scans.</li>
+                    <li>The pipeline estimated marks for nearly 300,000 students, handling noisy scanned sheets with a reported error rate of around 2–3%.</li>
+                    <li>I used that dataset to build a rank predictor, helping students estimate where their scores might place them. The website reached 20,000+ visitors.</li>
                   </ul>
-                  <a href="https://github.com/nishantjakane/kcetanswerkey/blob/main/README.md" target="_blank" rel="noreferrer">Full README ↗</a>
+                  <a href="https://github.com/nishantjakane/kcetanswerkey/blob/main/README.md" target="_blank" rel="noreferrer">Read the README ↗</a>
                 </div>
                   <!-- ANSI Shadow FIGlet lettering, generated from patorjk/figlet.js (TAAG). -->
-                  <div class="terminal-art" aria-hidden="true"><pre>██╗  ██╗ ██████╗███████╗████████╗
+                  <div class="terminal-art" aria-hidden="true"><span class="terminal-art__label">PROJECT / 04</span><pre>██╗  ██╗ ██████╗███████╗████████╗
 ██║ ██╔╝██╔════╝██╔════╝╚══██╔══╝
 █████╔╝ ██║     █████╗     ██║
 ██╔═██╗ ██║     ██╔══╝     ██║
@@ -286,7 +265,7 @@
 █████╔╝ █████╗   ╚████╔╝
 ██╔═██╗ ██╔══╝    ╚██╔╝
 ██║  ██╗███████╗   ██║
-╚═╝  ╚═╝╚══════╝   ╚═╝</pre></div>
+╚═╝  ╚═╝╚══════╝   ╚═╝</pre><span class="terminal-art__caption">[ SCAN TO SCORE ]</span></div>
                   </div>
                 </div>
               </details>
@@ -296,7 +275,7 @@
                 <span class="tech">Data analysis</span>
               </div>
             </div>
-            <a class="project-link" href="https://github.com/nishantjakane/kcetanswerkey" target="_blank" rel="noreferrer" aria-label="View KCET Answer Key source on GitHub (opens in a new tab)"><span class="project-link__label">GitHub</span><span class="glass-arrow" aria-hidden="true">↗</span></a>
+            <a class="project-link" href="https://github.com/nishantjakane/kcetanswerkey" target="_blank" rel="noreferrer" aria-label="Open KCET Answer Key on GitHub">↗</a>
           </article>
         </div>
         <a class="github-all" href="https://github.com/nishantjakane" target="_blank" rel="noreferrer"><span class="github-all__label">Explore all repositories on GitHub</span><span class="github-all__mark" aria-hidden="true">↗</span></a>
@@ -305,9 +284,9 @@
       <section class="skills container" id="skills">
         <p class="kicker">02 / Skills</p>
         <div class="skills-layout">
-          <h2>My working<br />toolbox<span class="heading-punctuation">_</span></h2>
+          <h2>Tools I’m<br />working with.</h2>
           <div class="skill-groups">
-            <div class="skill-group"><p>Languages</p><span class="skill-tech"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" alt="" />Python</span><span class="skill-tech"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg" alt="" />C++</span><span class="skill-tech"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" alt="" />HTML</span><span class="skill-tech"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" alt="" />CSS</span></div>
+            <div class="skill-group"><p>Languages</p><span class="skill-tech"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" alt="" />Python</span><span class="skill-tech"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg" alt="" />C++</span></div>
             <div class="skill-group"><p>Areas of interest</p><span>Financial technology</span><span>Machine learning</span><span>Software systems</span></div>
             <div class="skill-group"><p>Currently exploring</p><span>Backtesting</span><span>Order books</span><span>Neural networks</span><span>Competitive programming</span></div>
           </div>
@@ -315,13 +294,13 @@
       </section>
 
       <section class="about container" id="about">
-        <p class="kicker">03 / About</p>
+        <p class="kicker">03 / About me</p>
         <p class="statement"><span>I’m a </span><span class="highlight">student</span><span> from </span><span class="highlight">PES University, Bangalore</span><span>, with an interest in </span><span class="highlight">finance</span><span>, </span><span class="highlight">software development</span><span>, and </span><span class="highlight">ML</span><span>. I enjoy breaking down new ideas, building small projects around them, and improving as I go.</span></p>
       </section>
 
       <section class="contact container" id="contact">
         <p class="kicker">04 / Contact</p>
-        <h2>Let’s talk.</h2>
+        <h2>Let’s get<br /><em>in touch.</em></h2>
         <a class="email" href="mailto:nishantjakane425@gmail.com">nishantjakane425@gmail.com <span>↗</span></a>
       </section>
     </main>
@@ -332,6 +311,5 @@
     <script src="ambient-background.js?v=2"></script>
     <script src="skills-glass.js?v=1"></script>
     <script src="portfolio-effects.js?v=3"></script>
-    <script src="ascii-ui.js?v=2"></script>
   </body>
 </html>

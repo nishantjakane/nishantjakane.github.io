@@ -55,7 +55,7 @@ body .about .highlight { transition:text-shadow .5s ease; }
 
 /* A quiet terminal sign-off, with the same frosted material as the page. */
 body footer.terminal-footer { display:block; padding:0; margin-bottom:28px; overflow:hidden; border:1px solid rgb(255 255 255 / 11%); border-radius:24px; background:var(--sheet-fill); box-shadow:var(--sheet-shadow); backdrop-filter:blur(14px); -webkit-backdrop-filter:blur(14px); text-transform:none; letter-spacing:0; }
-.terminal-footer__bar,.terminal-footer__bottom { display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:12px; padding:16px 26px; color:var(--muted); font:10px/1.6 var(--mono); }
+.terminal-footer__bar,.terminal-footer__bottom { display:flex; flex-wrap:wrap; align-items:center; gap:12px; padding:16px 26px; color:var(--muted); font:10px/1.6 var(--mono); }
 .terminal-footer__bar { border-bottom:1px solid rgb(255 255 255 / 8%); background:rgb(255 255 255 / 3%); }
 .terminal-footer__status { display:inline-flex; align-items:center; gap:8px; }
 .terminal-footer__status > span { font-size:6px; color:#fff; }
@@ -64,15 +64,14 @@ body footer.terminal-footer { display:block; padding:0; margin-bottom:28px; over
 .terminal-footer__signoff { margin:0 0 10px; color:var(--ink); font:600 clamp(18px,2vw,26px)/1.4 "Space Grotesk",sans-serif; letter-spacing:-.025em; }
 .terminal-footer__signoff > span:first-child { margin-right:10px; color:var(--muted); font:400 12px/1.4 var(--mono); }
 .terminal-footer__note { margin:0; color:var(--muted); font:11px/1.7 var(--mono); }
-.terminal-footer__cursor { display:inline-block; margin-left:3px; color:#fff; }
+.terminal-footer__cursor,.terminal-cursor { display:inline-block; margin-left:3px; color:#fff; animation:footer-cursor 1.2s steps(1,end) infinite; }
 .terminal-footer__bottom { border-top:1px solid rgb(255 255 255 / 8%); }
-@media (hover:hover) and (pointer:fine) { .terminal-footer:hover .terminal-footer__cursor { animation:footer-cursor 1.2s steps(1,end) infinite; } }
 @keyframes footer-cursor { 50% { opacity:0; } }
 @media (max-width:650px) {
   .terminal-footer__body { align-items:flex-start; flex-direction:column; gap:20px; padding:24px 20px; }
   .terminal-footer__bar,.terminal-footer__bottom { padding:14px 20px; }
 }
-@media (prefers-reduced-motion:reduce) { .terminal-footer:hover .terminal-footer__cursor { animation:none; } }
+@media (prefers-reduced-motion:reduce) { .terminal-footer__cursor,.terminal-cursor { animation:none; } }
 
 /* Glass lives in the letterforms, without adding another pill or panel. */
 html[data-theme="mono"] body h2.glass-heading { font:700 clamp(36px,4.4vw,62px)/1.12 "Space Grotesk",sans-serif; letter-spacing:-.045em; }
